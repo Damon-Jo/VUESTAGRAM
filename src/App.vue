@@ -11,6 +11,8 @@
     <img src="./assets/logo.png" class="logo" />
   </div>
 
+  <h4>안녕 {{ $store.state.name}}</h4>
+
   <Container @write="작성한글 = $event" :이미지="이미지" :게시물="게시물" :step="step"/>
   <!-- <Container @write="작성한글 = $event" /> -->
   <button @click="more">더보기</button>
