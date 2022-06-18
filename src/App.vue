@@ -11,8 +11,8 @@
     <img src="./assets/logo.png" class="logo" />
   </div>
 
-  <Container :이미지="이미지" :게시물="게시물" :step="step"/>
-  <Container @write="작성한글 = $event" />
+  <Container @write="작성한글 = $event" :이미지="이미지" :게시물="게시물" :step="step"/>
+  <!-- <Container @write="작성한글 = $event" /> -->
   <button @click="more">더보기</button>
 
 

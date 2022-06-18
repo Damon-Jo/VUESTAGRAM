@@ -8,7 +8,7 @@
       이미지 집어넣기 : background-image : url() 
 
      -->
-    <div class="post-body" :style="{backgroundImage : `url(${게시물.postImage})`}"></div>
+    <div :class="게시물.filter" class="post-body" :style="{backgroundImage : `url(${게시물.postImage})`}"></div>
     <div class="post-content">
       <p>{{게시물.likes}} Likes</p>
       <p><strong>{{게시물.name}}</strong> {{게시물.content}}</p>
