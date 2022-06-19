@@ -12,6 +12,12 @@
   </div>
 
   <h4>안녕 {{ $store.state.name}}</h4>
+  <!--store파일에 state 데이터 바꾸는 법 : $store.commit(함수명)-->
+  <button @click="$store.commit('이름변경')">버튼</button>
+
+  <h4>나이 {{$store.state.age}}</h4>
+  <button @click="$store.commit('나이변경', 10)">나이추가</button> <!--10은 버튼 누를때 전달됨 store.js로-->
+
 
   <Container @write="작성한글 = $event" :이미지="이미지" :게시물="게시물" :step="step"/>
   <!-- <Container @write="작성한글 = $event" /> -->
